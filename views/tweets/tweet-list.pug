@@ -1,0 +1,15 @@
+if tweets
+    each tweet in tweets
+        div(class="card border-top-0 border-left-0 border-right-0 border-bottom")
+            div(class='card-body d-flex flex-column')
+                div(class='d-flex flex-row align-items-center')
+                    img(src=tweet.author.avatar width="40" height="40")
+                    span(class="flex-fill ml-2")=tweet.author.username
+                    if editable && tweet.author._id.toString() === currentUser._id.toString()
+                    div(class="d-flex flex-row justify-content-center")
+                        a(class="fas fa-edit pr-2 text-success" href="/tweets/edit/" + tweet._id)
+                        i(class="fas fa-minus-circle text-danger pointer-cursor" tweetid=tweet._id)
+                div(class='mt-3')= tweet.content
+
+
+                

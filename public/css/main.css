@@ -1,0 +1,23 @@
+
+.content{
+    max-width: 1000px;
+}
+.profil-container{
+    width: 30%;
+    max-width: 300px;
+}
+.btn-tweet{
+    border-radius: 30px;
+}
+body {
+    background-color:#f8f9fa;
+  }
+  .navbar {
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+  }
+.img-fluid{
+    height: 100px;
+}
+.pointer-cursor {
+    cursor: pointer;
+  }
